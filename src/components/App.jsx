@@ -1,5 +1,5 @@
 import React from 'react';
-import { FeedbackOption } from './Feedback/FeedbackOption';
+import { FeedbackOptions } from './Feedback/FeedbackOption';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
@@ -34,7 +34,7 @@ class App extends React.Component {
     return (
       <div className={style.container}>
         <Section title="Please leave feedback">
-          <FeedbackOption
+          <FeedbackOptions
             options={options}
             onLeaveFeedback={this.onLeaveFeedback}
           />
